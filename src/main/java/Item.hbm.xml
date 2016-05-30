@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+ <hibernate-mapping>
+ 	<class name="Item" table="item">
+ 		
+ 		<id name="iditem" type="int">
+ 			<column name="iditem"/>
+ 			<generator class="identity"/>
+ 		</id>
+ 		
+ 		<property name="idshoppinglist" type="int">
+ 			<column name="idshoppinglist"/>
+ 		</property>
+ 		
+ 		 <property name="name" type="java.lang.String">
+ 			<column name="name"/>
+ 		</property>
+ 		
+ 		 <property name="brand" type="java.lang.String">
+ 			<column name="brand"/>
+ 		</property>
+ 		
+ 		 <property name="additionalinfo" type="java.lang.String">
+ 			<column name="additionalinfo"/>
+ 		</property>
+ 		
+ 		 <property name="unit" type="java.lang.String">
+ 			<column name="unit"/>
+ 		</property>
+ 		
+ 		 <property name="quantity" type="java.lang.String">
+ 			<column name="quantity"/>
+ 		</property>
+ 		
+ 		 <property name="strikethrough" type="java.lang.Boolean">
+ 			<column name="strikethrough"/>
+ 		</property>
+ 	</class>
+ </hibernate-mapping>
